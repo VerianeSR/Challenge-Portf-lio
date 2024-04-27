@@ -1,0 +1,567 @@
+* {
+    box-sizing: border-box;
+   
+    padding: 0;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: var(--azul-claro);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    font-size: 14px;
+    color: black;
+    box-sizing: border-box;
+    text-align: center;
+    border: 5px;
+    border-color: red;
+
+}
+
+.menu__list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding: 12px;
+    font-size: 17px;
+    margin-top: 18px;
+    gap: 14px;
+    margin-right: 100px; 
+    font-weight: 700;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.title__div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse; 
+    width: 80%;
+}
+
+.title__profile {
+    width: auto; 
+    height: 250px; 
+}
+
+.title__container {
+    text-align: left; 
+}
+
+.title__bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.title__subsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.title__network {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 20px;
+    font-size: 18px;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.about {
+   
+    display: flex;
+    background-color: #eaf2fd;
+    width: 55%;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+    
+}
+.about__container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 9%;
+}
+
+.about__title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-size: 28px;
+    font-weight: 700;
+    
+}
+.about__paragraph {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: justify;
+    font-size: 18px; 
+    margin-top: 10px;
+}
+.skills {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 30px; /* Adiciona espaço abaixo da seção */
+    font-size: 24px ;
+    font-weight: 700;
+    margin: 10px;
+
+}
+
+.skills__line {
+    display: flex;
+    justify-content: center; /* Centraliza as caixas */
+    flex-wrap: wrap; /* Permite que as caixas quebrem para uma nova linha quando não houver espaço suficiente */
+    margin-top: 20px;
+}
+
+.skills__box {
+    width: 180px; /* Largura da caixa */
+    height: 180px; /* Altura da caixa */
+    margin: 5px; /* Espaçamento entre as caixas */
+    background-color: white; /* Cor de fundo da caixa */
+    display: flex;
+    align-items: center; /* Centraliza a imagem verticalmente */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+}
+
+.skills__img img {
+    width: 30px; /* Largura da imagem */
+    margin-right: 5px; /* Espaçamento à direita da imagem */
+}
+
+.hobbies {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 30px; /* Adiciona espaço abaixo da seção */
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px;
+    
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: center; /* Centraliza as caixas */
+    flex-wrap: wrap; /* Permite que as caixas quebrem para uma nova linha quando não houver espaço suficiente */
+    margin-top: 20px;
+}
+
+.hobbies__box {
+    width: 180px; /* Largura da caixa */
+    height: 180px; /* Altura da caixa */
+    margin: 5px; /* Espaçamento entre as caixas */
+    background-color: white; /* Cor de fundo da caixa */
+    display: flex;
+    align-items: center; /* Centraliza a imagem verticalmente */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+}
+
+.hobbies__img img {
+    width: 30px; /* Largura da imagem */
+    margin-right: 5px; /* Espaçamento à direita da imagem */
+}
+
+.academic {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 30px; /* Adiciona espaço abaixo da seção */
+    font-size: 24px;
+    font-weight: 700;
+    margin: 10px;
+}
+.formAcademica {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eaf2fd;
+    padding: 20px 0;
+}
+
+#formacao {
+    margin-bottom: 20px;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.mainCard {
+    display: flex;
+    gap: 1px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards na horizontal */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+}
+
+.card {
+    width: 200px; 
+    text-align: center;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Permite que os cards cresçam para preencher o espaço disponível */
+
+    padding: 30px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.formacaoDescricao {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Define a largura total */
+}
+
+.formacaoDescricao li {
+    margin-bottom: 5px;
+}
+
+
+.experience {
+    display: flex;
+    flex-direction: column; /* Exibir os elementos em coluna */
+    align-items: center; /* Centralizar os elementos horizontalmente */
+    text-align: center; /* Centralizar o texto horizontalmente */
+    margin-bottom: 30px; /* Adicionar espaço abaixo da seção */
+    margin-top: 20px; 
+}
+
+.experience__section__title {
+    font-size: 28px; /* Tamanho do título */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.experiencie__box {
+    display: flex;
+    flex-direction: column; /* Exibir os elementos em coluna */
+    align-items: center; /* Centralizar os elementos horizontalmente */
+    margin-top: 20px; /* Espaçamento entre as caixas */
+    width: 1000px; 
+}
+
+.experience__img {
+    max-width: 100%; /* Garantir que a imagem não ultrapasse a largura da caixa */
+    border-radius: 8px; /* Adicionar borda arredondada à imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    border: none; /* Remover borda */
+}
+
+.experience__info {
+    width: 80%; /* Largura do conteúdo */
+    width: 1000px; /* Largura máxima do conteúdo */
+    padding: 20px; /* Preenchimento interno */
+    background-color: #f8f9fa; /* Cor de fundo */
+    margin-top: 10px; /* Espaçamento acima do conteúdo */
+    border: none; /* Remover borda */
+}
+
+.experience__title {
+    font-size: 20px; /* Tamanho do título */
+    font-weight: bold; /* Negrito */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.experience__text {
+    font-size: 18px; /* Tamanho do texto */
+    margin-bottom: 10px; /* Espaçamento abaixo do texto */
+}
+
+.experience__description {
+    display: flex;
+    justify-content: space-around; /* Distribuir os botões horizontalmente */
+    margin-top: 10px; /* Espaçamento acima dos botões */
+}
+
+.experience__repo,
+.experience__demo {
+    display: inline-block; /* Permite alinhar os botões lado a lado */
+}
+
+.experiencia__botao--repo,
+.experiencia__botao--demo {
+    background-color: #3498db; /* Azul bonito */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remover a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar por cima */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+.experiencia__botao--repo:hover,
+.experiencia__botao--demo:hover {
+    background-color: #2980b9; /* Azul mais escuro ao passar o mouse */
+}
+
+
+.formcontato {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    background-color: #eaf2fd;
+    padding: 80px;
+}
+.formcontato__title {
+    font-weight: 700;
+    font-size: 28px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.formcontato__subtext {
+    font-size: 18px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 3px;
+}
+
+.formcontato__contacto {
+    display: flex; /* Para usar flexbox */
+    width: 80%; /* Ajuste conforme necessário */
+}
+
+.formcontato--esquerda {
+    flex: 0 0 auto; /* O tamanho da div da imagem não deve mudar */
+    margin-right: 20px; /* Espaçamento entre a imagem e o formulário */
+}
+
+.formcontato__img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho da div */
+}
+
+.formcontato__text {
+    flex: 1; /* A parte do texto e do formulário deve ocupar o restante do espaço disponível */
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column; /* Para alinhar os elementos verticalmente */
+    margin-top: 30px;
+}
+
+.formcontato__input,
+.formcontato__textarea,
+.formcontato__botao {
+    margin-bottom: 9px; /* Espaçamento entre os elementos do formulário */
+}
+.formcontato__input {
+    padding: 13px;
+}
+.formcontato__botao {
+    background-color: #3498db; /* Azul bonito */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar por cima */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+    width: 270px;/* Diminui o tamanho do texto */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 19px;
+    text-shadow: 1px 1px black;
+}
+input:focus {
+    outline: none; 
+}
+textarea:focus {
+    outline: none; 
+}
+
+.formcontato__botao:hover {
+    background-color: #2980b9; 
+}
+
+.footer {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 25px;
+   font-size: 19px;
+}
+.footer__rodape p {
+   margin-bottom:4px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .menu__list {
+        margin-right: 50px; 
+        font-size: 15px; 
+    }
+    .title__profile {
+        max-width: 30%; /* Define uma largura máxima para a imagem */
+        height: auto; /* Altura automática para manter a proporção */
+        position: absolute; /* Posiciona a imagem absolutamente dentro do contêiner pai */
+        top: 20px; /* Ajusta a posição da imagem para cima */
+        left: 50%; /* Centraliza a imagem horizontalmente */
+        transform: translateX(-50%); /* Move a imagem 50% para a esquerda para centralizá-la */
+        margin-top: 10px;
+    }
+   
+}
+
+/* Responsivo para dispositivos móveis */
+@media only screen and (max-width: 480px) {
+    .menu__list {
+        flex-wrap: nowrap; 
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 10px; 
+        margin-left: 7; 
+        padding: 5px; 
+        font-size: 10px;
+        width: 100vw; 
+    }
+    .title__container {
+        text-align: left; 
+        position: relative; /* Adiciona uma posição relativa para posicionar a imagem */
+    }
+    
+    .title__profile {
+        max-width: 30%; /* Define uma largura máxima para a imagem */
+        height: auto; /* Altura automática para manter a proporção */
+        position: absolute; /* Posiciona a imagem absolutamente dentro do contêiner pai */
+        top: 20px; /* Ajusta a posição da imagem para cima */
+        left: 50%; /* Centraliza a imagem horizontalmente */
+        transform: translateX(-50%); /* Move a imagem 50% para a esquerda para centralizá-la */
+        margin-top: 10px;
+    }
+    .formcontato {
+        padding: 20px; /* Reduz o preenchimento para dispositivos móveis */
+    }
+
+    .formcontato__contacto {
+        flex-direction: column; /* Exibir elementos em coluna em dispositivos móveis */
+        align-items: center; /* Centralizar os elementos horizontalmente em dispositivos móveis */
+    }
+
+    .formcontato--esquerda {
+        margin-right: 0; /* Remove o espaçamento à direita em dispositivos móveis */
+        margin-bottom: 20px; /* Adiciona espaçamento abaixo da imagem em dispositivos móveis */
+    }
+
+    .formcontato__img {
+        width: 100%; /* Define a largura da imagem como 100% para ocupar toda a largura disponível */
+    }
+
+    .formcontato__text {
+        width: 100%; /* Define a largura do texto como 100% para ocupar toda a largura disponível */
+    }
+
+    .formcontato__botao {
+        width: 100%; /* Define a largura do botão como 100% para ocupar toda a largura disponível */
+    
+}
+    
+    
+    .title__div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse; 
+        width: 80%;
+        margin: auto; /* Centraliza horizontalmente */
+    }
+    .title__bio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 100px;
+    }
+    .title__subsection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: column; /* Exibir os elementos em coluna */
+        align-items: center; /* Centralizar os elementos horizontalmente */
+        text-align: center; /* Centralizar o texto horizontalmente */
+        margin-bottom: 30px; /* Adicionar espaço abaixo da seção */
+        margin-top: 20px;
+    }
+    
+    .experience__section__title {
+        font-size: 28px; /* Tamanho do título */
+        font-weight: bold; /* Negrito */
+        margin-bottom: 20px; /* Espaçamento abaixo do título */
+    }
+    
+    .experiencie__box {
+        display: flex;
+        flex-direction: column; /* Exibir os elementos em coluna */
+        align-items: center; /* Centralizar os elementos horizontalmente */
+        margin-top: 20px; /* Espaçamento entre as caixas */
+        width: 100%; /* Alterado para ocupar toda a largura */
+    }
+    
+    .experience__img {
+        max-width: 100%; /* Garantir que a imagem não ultrapasse a largura da caixa */
+        border-radius: 8px; /* Adicionar borda arredondada à imagem */
+        margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+        border: none; /* Remover borda */
+    }
+    
+    .experience__info {
+        width: 100%; /* Largura do conteúdo */
+        padding: 20px; /* Preenchimento interno */
+        background-color: #f8f9fa; /* Cor de fundo */
+        margin-top: 10px; /* Espaçamento acima do conteúdo */
+        border: none; /* Remover borda */
+    }
+    
+    .experience__title {
+        font-size: 20px; /* Tamanho do título */
+        font-weight: bold; /* Negrito */
+        margin-bottom: 10px; /* Espaçamento abaixo do título */
+    }
+    
+    .experience__text {
+        font-size: 18px; /* Tamanho do texto */
+        margin-bottom: 10px; /* Espaçamento abaixo do texto */
+    }
+    
+    .experience__description {
+        display: flex;
+        flex-direction: column; /* Alterado para exibir os botões em coluna */
+        margin-top: 10px; /* Espaçamento acima dos botões */
+    }
+    
+    .experience__repo,
+    .experience__demo {
+        margin-bottom: 10px; /* Adiciona espaço entre os botões */
+    }
+    
+    .experiencia__botao--repo,
+    .experiencia__botao--demo {
+        width: 100%; /* Botões ocupam toda a largura */
+        padding: 10px; /* Espaçamento interno */
+    }
+    
+}
+
+
+
